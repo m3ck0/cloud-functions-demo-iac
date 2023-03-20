@@ -9,11 +9,6 @@ variable "service_account_json_key" {
     sensitive       = true
 }
 
-variable "default_gce_region" {
-    description     = "GCP Compute Engine default region"
-    type            = string
-}
-
 variable "services" {
     description     = "GCP APIs & services required by the project"
     type            = list(string)
