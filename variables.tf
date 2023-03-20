@@ -13,6 +13,7 @@ variable "services" {
     description     = "GCP APIs & services required by the project"
     type            = list(string)
     default         = [
+        "iam.googleapis.com",
         "cloudbuild.googleapis.com",
         "iam.googleapis.com",
         "cloudfunctions.googleapis.com",
