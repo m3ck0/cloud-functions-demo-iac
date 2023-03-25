@@ -1,7 +1,5 @@
-
-resource "google_cloudbuild_trigger" "deploy_gcs_upload_proxy" {
+resource "google_cloudbuild_trigger" "deploy_gcs_upload_proxy_gcf" {
     name                                = "deploy-gcs-upload-proxy-gcf"
-    # location                            = "global"  # NOTE: by default
 
     github {
         owner                           = var.github_repo_owner
