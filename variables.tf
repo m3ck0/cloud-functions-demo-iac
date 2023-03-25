@@ -21,3 +21,17 @@ variable "services" {
         "secretmanager.googleapis.com"
     ]
 }
+
+# region - GitHub
+variable "github_token" {
+    description     = "Github token to manage repositories"
+    type            = string
+    sensitive       = true
+}
+
+variable "github_repo_owner" {
+    description     = "Github repo owner name"
+    type            = string
+    sensitive       = true
+}
+# endregion
